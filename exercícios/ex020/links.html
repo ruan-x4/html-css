@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(141, 141, 141);
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            content: 'visitado'
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: yellowgreen;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        .especial::before {
+            content: 'Clique ';
+            color: black;
+            font-weight: normal;
+        }
+
+        .especial::after {
+            content: ' [link] ';
+            color: black;
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li>
+            <a class="especial" href="https://instagram.com/ruan.x4" target="_blank" rel="external">Perfil no Instagram</a>
+        </li>
+        <li>
+            <a href="https://linkedin.com/in/ruan-limax4" target="_blank" rel="external">Perfil no LinkedIn</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/@ruan.x4" target="_blank" rel="external"> Canal no Youtube</a>
+        </li>
+    </ul>
+</body>
+</html>
